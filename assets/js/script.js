@@ -458,8 +458,26 @@ document.addEventListener('DOMContentLoaded', function() {
         'Egypt': { flag: '🇪🇬', lived: false, codes: ['EGY'] },
         'France': { flag: '🇫🇷', lived: false, codes: ['FRA'] },
         'Norway': { flag: '🇳🇴', lived: false, codes: ['NOR'] },
-        'Vietnam': { flag: '🇻🇳', lived: false, codes: ['VNM'] }
+        'Vietnam': { flag: '🇻🇳', lived: false, codes: ['VNM'] },
+        'United States': { flag: '🇺🇸', lived: false, codes: ['USA'] },
+        'Canada': { flag: '🇨🇦', lived: false, codes: ['CAN'] },
+        'Mozambique': { flag: '🇲🇿', lived: false, codes: ['MOZ'] },
+        'Emirates': { flag: '🇦🇪', lived: false, codes: ['ARE'] },
+        'Oman': { flag: '🇴🇲', lived: false, codes: ['OMN'] },
+        'Spain': { flag: '🇪🇸', lived: false, codes: ['ESP']},
+        'England': { flag: '🏴', lived: false, codes: ['GBR'] },
+        'Italy': { flag: '🇮🇹', lived: false, codes: ['ITA'] },
+        'Germany': { flag: '🇩🇪', lived: false, codes: ['DEU'] },
+        'Netherlands': { flag: '🇳🇱', lived: false, codes: ['NLD'] }
     };
+
+    // Calculate counts
+    const countriesLivedCount = Object.values(countriesVisited).filter(c => c.lived).length - 1; // Exclude French Guiana from lived count
+    const countriesVisitedCount = Object.values(countriesVisited).filter(c => !c.lived).length;
+    
+    // Update the stats in the HTML
+    document.getElementById('countries-visited-count').textContent = countriesVisitedCount;
+    document.getElementById('countries-lived-count').textContent = countriesLivedCount;
 
     // Create lookup by ISO code
     const isoLookup = {};
