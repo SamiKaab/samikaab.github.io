@@ -198,7 +198,7 @@ if (aboutSection) {
 const projectData = {
     'battery-monitoring': {
         title: 'Industrial IoT Battery Monitoring System',
-        images: ['NLT_Experience/battery_monitoring_dashboard.png'],
+        images: ['assets/images/projects/NLT_Digital/NLT_BatteryDashboard.png'],
         description: 'Delivered a production-ready IoT system monitoring 300+ industrial batteries with real-time telemetry, analytics, and predictive maintenance capabilities. The system enables proactive identification of potential failures, significantly reducing unplanned downtime.',
         highlights: [
             'Multi-threaded MQTT telemetry system for real-time data collection from 300+ batteries',
@@ -209,12 +209,12 @@ const projectData = {
         ],
         techStack: ['Python', 'MQTT', 'Flask', 'IoT', 'Real-time Analytics', 'Dash Plotly', 'Multi-threading'],
         links: [
-            { text: 'View NLT Details', url: 'NLT_Experience/Statement of Duties and Accomplishments.pdf', icon: 'fas fa-file-pdf' }
+            { text: 'View NLT Details', url: 'assets/images/projects/NLT_Digital/Statement of Duties and Accomplishments.pdf', icon: 'fas fa-file-pdf' }
         ]
     },
     'automated-testing': {
         title: 'Automated Hardware Testing Framework',
-        images: ['NLT_Experience/automated_test_plot.png'],
+        images: ['assets/images/projects/NLT_Digital/NLT_AutomatedTest.png'],
         description: 'Designed and implemented a comprehensive Python-based testing framework that coordinates multi-day automated testing across hardware and software systems, eliminating manual intervention and significantly improving data quality and development velocity.',
         highlights: [
             'Automated coordination of multi-day testing cycles across hardware/software systems',
@@ -225,12 +225,12 @@ const projectData = {
         ],
         techStack: ['Python', 'Testing Automation', 'Data Analysis', 'CI/CD', 'Hardware Integration', 'Pytest'],
         links: [
-            { text: 'View NLT Details', url: 'NLT_Experience/Statement of Duties and Accomplishments.pdf', icon: 'fas fa-file-pdf' }
+            { text: 'View NLT Details', url: 'assets/images/projects/NLT_Digital/Statement of Duties and Accomplishments.pdf', icon: 'fas fa-file-pdf' }
         ]
     },
     'peripheral-emulator': {
         title: 'Virtual Peripheral Emulator',
-        images: ['NLT_Experience/pad_emulator_interface.png'],
+        images: ['assets/images/projects/NLT_Digital/NLT_PADEmulator.png'],
         description: 'Created a sophisticated hardware emulation system with custom PCB design, protocol simulation, and intuitive GUI that enables firmware developers to continue work independently of physical hardware availability, eliminating critical bottlenecks.',
         highlights: [
             'Custom PCB design with comprehensive protocol simulation',
@@ -241,12 +241,12 @@ const projectData = {
         ],
         techStack: ['PCB Design', 'Python', 'ESP32', 'GUI Development', 'Protocol Simulation', 'Embedded Systems'],
         links: [
-            { text: 'View NLT Details', url: 'NLT_Experience/Statement of Duties and Accomplishments.pdf', icon: 'fas fa-file-pdf' }
+            { text: 'View NLT Details', url: 'assets/images/projects/NLT_Digital/Statement of Duties and Accomplishments.pdf', icon: 'fas fa-file-pdf' }
         ]
     },
     'desk-positioning': {
         title: 'Clinical Desk Positioning System',
-        images: ['Desk positioning system/standup_device_assembly.gif'],
+        images: ['assets/images/projects/Desk positioning system/DeskSystem_Assembly.gif'],
         description: 'Delivered a complete wearable sensor system for clinical lower back pain research study. Led full development lifecycle from embedded firmware to cloud data pipeline, real-time monitoring dashboard, hardware design, and comprehensive documentation. Published in Applied Ergonomics 2025.',
         highlights: [
             'Complete sensor system with custom firmware and cloud integration',
@@ -264,7 +264,7 @@ const projectData = {
     },
     'wmore-imu': {
         title: 'WMORE - Open-Source IMU Platform',
-        images: ['WMORE/exploded_WMORE.gif'],
+        images: ['assets/images/projects/WMORE/WMORE_ExplodedView.gif'],
         description: 'Advanced open-source IMU system for the research community featuring professional device enclosure design, robot-controlled performance benchmarking, modern UI software, and streamlined CI/CD workflow. Contributed comprehensive documentation and modernized development practices.',
         highlights: [
             'Professional device enclosure design for research-grade durability',
@@ -294,7 +294,7 @@ const projectData = {
         ],
         techStack: ['ESP8266', 'FreeRTOS', 'C/C++', 'PCB Design', 'Web Interface', 'CI/CD', 'Embedded Systems'],
         links: [
-            { text: 'View NLT Details', url: 'NLT_Experience/Statement of Duties and Accomplishments.pdf', icon: 'fas fa-file-pdf' }
+            { text: 'View NLT Details', url: 'assets/images/projects/NLT_Digital/Statement of Duties and Accomplishments.pdf', icon: 'fas fa-file-pdf' }
         ]
     },
     'clinical-research': {
@@ -314,7 +314,7 @@ const projectData = {
     },
     'vr-rehabilitation': {
         title: 'VR Rehabilitation Assessment Tool',
-        images: ['VR_rehabilitation assessment tool/image.png', 'VR_rehabilitation assessment tool/Screenshot 2025-11-24 182336.png', 'VR_rehabilitation assessment tool/Screenshot 2025-11-24 183609.png'],
+        images: ['assets/images/projects/VR_rehabilitation assessment tool/VR_RehabTool.png'],
         description: 'Created an innovative VR rehabilitation assessment tool by integrating a Franka Panda robotic arm with VR headset technology. Developed a Unity-based serious game to evaluate upper body mobility and generate personalized training programs for impairment recovery.',
         highlights: [
             'Bidirectional ROS communication between Unity VR and Franka Panda robot',
