@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sami Kaab - Embedded Software & Biomedical Engineer</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Leaflet for map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">SK</a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#personal" class="nav-link">Beyond Work</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Sami Kaab</h1>
+            <p class="hero-subtitle">Embedded Software & Biomedical Engineer</p>
+            <p class="hero-description">Designing IoT systems, medical devices, and rehabilitation technologies at the intersection of hardware and software</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                <a href="assets/documents/CV_SamiKaab.pdf" class="btn btn-secondary" target="_blank">Download CV</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/sami-kaab/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/SamiKaab" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://orcid.org/0009-0008-0054-0513" target="_blank" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm and embedded software engineer with a background in electrical and biomedical engineering, specializing in IoT systems, robotics and rehabilitation technologies.</p>
+                    <p>My experience includes industrial battery monitoring systems, automated testing frameworks, clinical sensor systems, VR rehabilitation tools, and open-source sensor platforms.</p>
+                    <p>My work spans both research institutions and industry settings, combining technical development with clinical research.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>3+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>7</h3>
+                        <p>Featured Projects</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>2</h3>
+                        <p>Publications</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1: IoT Battery Monitoring -->
+                <div class="project-card" onclick="openProjectModal('battery-monitoring')">
+                    <div class="project-image-container">
+                        <img src="assets/images/projects/NLT_Digital/NLT_BatteryDashboard.png" alt="Battery Monitoring Dashboard" class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Click for details</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>Industrial IoT Battery Monitoring</h3>
+                        <p>IoT system monitoring 300+ industrial batteries with multi-threaded MQTT telemetry and real-time analytics for predictive maintenance</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">MQTT</span>
+                            <span class="tag">IoT</span>
+                            <span class="tag">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Automated Testing -->
+                <div class="project-card" onclick="openProjectModal('automated-testing')">
+                    <div class="project-image-container">
+                        <img src="assets/images/projects/NLT_Digital/NLT_AutomatedTest.png" alt="Automated Test Results" class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Click for details</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>Automated Hardware Testing Framework</h3>
+                        <p>Python test framework coordinating multi-day automated testing across hardware and software systems</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Testing</span>
+                            <span class="tag">Automation</span>
+                            <span class="tag">Data Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Peripheral Emulator -->
+                <div class="project-card" onclick="openProjectModal('peripheral-emulator')">
+                    <div class="project-image-container">
+                        <img src="assets/images/projects/NLT_Digital/NLT_PADEmulator.png" alt="PAD Emulator Interface" class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Click for details</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Virtual Peripheral Emulator</h3>
+                        <p>Virtual peripheral emulator with custom PCB and protocol simulation enabling firmware development independent of physical hardware</p>
+                        <div class="project-tags">
+                            <span class="tag">PCB Design</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">ESP32</span>
+                            <span class="tag">GUI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Clinical Sensor System -->
+                <div class="project-card" onclick="openProjectModal('desk-positioning')">
+                    <div class="project-image-container">
+                        <img src="assets/images/projects/Desk positioning system/DeskSystem_Assembly.gif" alt="Desk Positioning System" class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Click for details</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Clinical Desk Positioning System</h3>
+                        <p>Complete sensor system for clinical lower back pain study with firmware, cloud data pipeline, and real-time monitoring</p>
+                        <div class="project-tags">
+                            <span class="tag">Embedded C</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">IMU</span>
+                            <span class="tag">Cloud</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Open-Source IMU -->
+                <div class="project-card" onclick="openProjectModal('wmore-imu')">
+                    <div class="project-image-container">
+                        <img src="assets/images/projects/WMORE/WMORE_ExplodedView.gif" alt="WMORE IMU Platform" class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Click for details</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Open-Source IMU Platform (WMORE)</h3>
+                        <p>Advanced open-source IMU system with device enclosure design, robot-controlled benchmarking, and CI/CD workflow</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">IMU</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Clinical Research Study -->
+                <div class="project-card" onclick="openProjectModal('clinical-research')">
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <i class="fas fa-notes-medical"></i>
+                        </div>
+                        <h3>Multi-Modal Stroke Movement Analysis</h3>
+                        <p>Clinical research study analyzing upper body movement in stroke survivors using multi-modal sensing</p>
+                        <div class="project-tags">
+                            <span class="tag">Motion Capture</span>
+                            <span class="tag">IMU</span>
+                            <span class="tag">EMG</span>
+                            <span class="tag">Clinical Research</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: VR Rehabilitation -->
+                <div class="project-card" onclick="openProjectModal('vr-rehabilitation')">
+                    <div class="project-image-container">
+                        <img src="assets/images/projects/VR_rehabilitation assessment tool/VR_RehabTool.png" alt="VR Rehabilitation Assessment Tool" class="project-image">
+                        <div class="project-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <p>Click for details</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <i class="fas fa-vr-cardboard"></i>
+                        </div>
+                        <h3>VR Rehabilitation Assessment Tool</h3>
+                        <p>VR rehabilitation assessment tool integrating Franka Panda robotic arm with Unity serious game</p>
+                        <div class="project-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">ROS</span>
+                            <span class="tag">VR</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <!-- NLT Digital -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Oct 2024 – Jul 2025</span>
+                        <h3>Embedded Software Engineer</h3>
+                        <h4>NLT Digital · Caboolture, Australia</h4>
+                        <p class="timeline-subtitle">Designed and deployed IoT systems and automated testing frameworks for industrial battery monitoring</p>
+                        <ul>
+                            <li>Delivered an IoT system to monitor 300+ industrial batteries, enabling predictive maintenance through multi-threaded MQTT telemetry, real-time analytics, and web dashboard to reduce unplanned downtime and gain insight into battery health</li>
+                            <li>Accelerated product validation cycles by designing a Python test framework to coordinate multi-day testing across hardware and software systems, eliminating manual intervention and improving data quality</li>
+                            <li>Eliminated hardware development bottlenecks by creating a virtual peripheral emulator with protocol simulation, custom PCB, and GUI, enabling firmware development to continue independently of physical hardware availability</li>
+                            <li>Developed complete embedded power-monitoring solution (ESP8266/FreeRTOS) with web configuration, reliable telemetry, custom PCB design, and CI/CD deployment tools for field-ready use</li>
+                        </ul>
+                        <div class="timeline-projects">
+                            <a class="timeline-project-link" onclick="openProjectModal('battery-monitoring')">
+                                <i class="fas fa-microchip"></i> IoT Battery Monitoring
+                            </a>
+                            <a class="timeline-project-link" onclick="openProjectModal('automated-testing')">
+                                <i class="fas fa-flask"></i> Automated Testing
+                            </a>
+                            <a class="timeline-project-link" onclick="openProjectModal('peripheral-emulator')">
+                                <i class="fas fa-cogs"></i> Peripheral Emulator
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UQ -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Aug 2022 – Oct 2024</span>
+                        <h3>Biomedical Research Engineer</h3>
+                        <h4>The University of Queensland · Brisbane, Australia</h4>
+                        <p class="timeline-subtitle">Led and participated in the creation of multiple devices and clinical research systems combining robotics, human and environmental sensor technologies, virtual reality, and stroke rehabilitation science</p>
+                        <ul>
+                            <li>Delivered a complete sensor system for a clinical lower back pain study. Owned full development lifecycle from firmware to cloud pipeline, real-time monitoring, hardware design, and documentation. System deployed in multi-site study (published Applied Ergonomics 2025)</li>
+                            <li>Advanced open-source IMU system for research community through device enclosure design, robot controlled performance benchmarking, UI software development, and modernized CI/CD workflow (dev containers). Authored comprehensive documentation</li>
+                            <li>Created a VR rehabilitation assessment tool by integrating a robotic arm (Franka Panda) with a VR headset and developed Unity serious game to evaluate upper body mobility and generate personalized training programs for impairment recovery</li>
+                            <li>Designed and executed a clinical research study with physiotherapists aimed at analyzing upper body movement in stroke survivors using multi-modal sensing (motion capture, IMUs, depth cameras, EMG) to validate novel smoothness metrics</li>
+                            <li>Contributed to setup and data collection of multi-institutional research project evaluating novel rehabilitation technologies (robotic gait trainer, wearable sensors, motion analysis) in hospital setting to improve physiotherapy outcomes in collaboration with Princess Alexandria Hospital, UQ, and Griffith University (published ICORR 2025)</li>
+                        </ul>
+                        <div class="timeline-projects">
+                            <a class="timeline-project-link" onclick="openProjectModal('desk-positioning')">
+                                <i class="fas fa-heartbeat"></i> Desk Positioning System
+                            </a>
+                            <a class="timeline-project-link" onclick="openProjectModal('wmore-imu')">
+                                <i class="fas fa-robot"></i> WMORE IMU Platform
+                            </a>
+                            <a class="timeline-project-link" onclick="openProjectModal('vr-rehabilitation')">
+                                <i class="fas fa-vr-cardboard"></i> VR Rehabilitation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STARS Consulting -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jul – Aug 2024</span>
+                        <h3>Mechatronics Rehabilitation Engineer (Consulting)</h3>
+                        <h4>Surgical, Treatment and Rehabilitation Service · Brisbane, Australia</h4>
+                        <ul>
+                            <li>Designed and developed force sensing system for ankle flexion/extension measurement with ESP32 firmware and real-time web interface (Dash Plotly, BLE)</li>
+                            <li>Collaborated with mechanical engineers on device interface manufacturing and electronics housing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Gelomics Consulting -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jul – Aug 2024</span>
+                        <h3>Mechatronics Engineer (Consulting)</h3>
+                        <h4>Gelomics · Brisbane, Australia</h4>
+                        <ul>
+                            <li>Assessed feasibility and developed prototype for automated LED spectroscopy measurements</li>
+                            <li>Delivered technical reports and roadmapping for future development</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Teaching -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022 – 2024</span>
+                        <h3>Casual Academic – Medical Device Engineering Graduate Course</h3>
+                        <h4>The University of Queensland · Brisbane, Australia</h4>
+                        <ul>
+                            <li>Developed course material and ran weekly workshops on ISO 14971 risk management and ISO 13485 design controls</li>
+                            <li>Supervised multidisciplinary student teams through full device development lifecycle from concept to regulatory compliant prototype</li>
+                            <li>Assessed technical presentations, design reports, and risk analysis documentation for graduate-level medical device projects</li>
+                            <li>Assisted course coordinator with course administration and student support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <!-- Bachelor's Degree -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2022</span>
+                        <h3>Bachelor of Electrical and Biomedical Engineering (Honours)</h3>
+                        <h4>The University of Queensland · Brisbane, Australia</h4>
+                        <ul>
+                            <li>Honours thesis: Developed Raspberry Pi-based synchronization protocol achieving sub-10ms recording latency between commercial IMU sensors and Optitrack motion capture system</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- NeuroRehack Hackathon -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Jun–Jul 2021</span>
+                        <h3>NeuroRehack Hackathon – 1st Place</h3>
+                        <h4>UQ, CMC Vellore, University of Rome</h4>
+                        <ul>
+                            <li>Participated in two week hackathon organised by UQ in collaboration with CMC Vellore and the University of Rome. Attended a series of lectures on neuroscience and rehabilitation engineering</li>
+                            <li>Collaborated with a multidisciplinary team to develop an HTC Vive–based serious game featuring bidirectional ROS communication with a Panda robot for isometric learning assessment</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- HES-SO Internship -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Dec 2019–Feb 2020</span>
+                        <h3>Electrical Engineer Intern</h3>
+                        <h4>HES-SO · Sion, Switzerland</h4>
+                        <ul>
+                            <li>Developed Python automation interface for optometry instrument, significantly reducing measurement time</li>
+                            <li>Performed data analysis in R for research applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">R</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-microchip"></i> Embedded Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">FreeRTOS</span>
+                        <span class="skill-tag">Embedded Linux</span>
+                        <span class="skill-tag">ESP32/ESP8266</span>
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">Raspberry Pi</span>
+                        <span class="skill-tag">PCB Design</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> Robotics & Vision</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ROS (Noetic)</span>
+                        <span class="skill-tag">Franka Panda</span>
+                        <span class="skill-tag">Unity VR</span>
+                        <span class="skill-tag">YOLO</span>
+                        <span class="skill-tag">OpenPose</span>
+                        <span class="skill-tag">Optitrack</span>
+                        <span class="skill-tag">Kinect</span>
+                        <span class="skill-tag">IMU/EMG</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Development Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">MQTT</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Dash Plotly</span>
+                        <span class="skill-tag">Autodesk Inventor</span>
+                        <span class="skill-tag">Fusion 360</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-line"></i> Data Analysis</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">NumPy/Pandas</span>
+                        <span class="skill-tag">Signal Processing</span>
+                        <span class="skill-tag">Statistical Analysis</span>
+                        <span class="skill-tag">Motion/Biomechanical Analysis</span>
+                        <span class="skill-tag">Data Visualization</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-users"></i> Professional</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Cross-functional Collaboration</span>
+                        <span class="skill-tag">Technical Mentorship</span>
+                        <span class="skill-tag">Project Management</span>
+                        <span class="skill-tag">Scientific Writing</span>
+                        <span class="skill-tag">Stakeholder Management</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-language"></i> Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">English (Fluent)</span>
+                        <span class="skill-tag">French (Fluent)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <div class="publications-list">
+                <div class="publication-item">
+                    <i class="fas fa-file-alt"></i>
+                    <div class="publication-content">
+                        <h4>Development, validation, acceptability and usability of a device-based system to measure sit-stand desk usage</h4>
+                        <p class="publication-authors">Healy, G. N., Melendez-Calderon, A., Kaab, S., et al.</p>
+                        <p class="publication-venue">Applied Ergonomics, 2025</p>
+                        <a href="https://doi.org/10.1016/j.apergo.2025.104490" target="_blank" class="publication-link">View Publication →</a>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <i class="fas fa-file-alt"></i>
+                    <div class="publication-content">
+                        <h4>EPIC-Tech - Engineering and Physiotherapy Interdisciplinary Collaboration with Technology: A Case Study</h4>
+                        <p class="publication-authors">Shirota, C., Donovan, J., Cave, C., Kaab, S. A., & Melendez-Calderon, A.</p>
+                        <p class="publication-venue">ICORR 2025</p>
+                        <a href="https://doi.org/10.1109/icorr66766.2025.11063109" target="_blank" class="publication-link">View Publication →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal/Beyond Work Section -->
+    <section id="personal" class="personal">
+        <div class="container">
+            <h2 class="section-title">Beyond Work</h2>
+            <div class="personal-intro">
+                <p>I'm drawn to the outdoors and adventure. I was lucky to be able to travel from a young age and spent much of my childhood traveling overseas which sparked a lifelong passion for nature and exploration.</p>
+                <p>Today, I continue seeking new adventures—whether it's scuba diving, climbing, or trekking through remote mountain trails. Each expedition fuels my curiosity and my passion for discovery.</p>
+            </div>
+
+            <!-- Activity Cards -->
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <div class="activity-image">
+                        <img src="assets/images/personal/Scuba.jpeg" alt="Scuba Diving">
+                    </div>
+                    <div class="activity-content">
+                        <i class="fas fa-water"></i>
+                        <h3>Scuba Diving</h3>
+                        <p>Certified Level 2 ANMP diver</p>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-image">
+                        <img src="assets/images/personal/Climbing.jpg" alt="Climbing">
+                    </div>
+                    <div class="activity-content">
+                        <i class="fas fa-mountain"></i>
+                        <h3>Climbing</h3>
+                        <p>Indoor and outdoor climbing</p>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-image">
+                        <img src="assets/images/personal/Hiking.jpeg" alt="Hiking">
+                    </div>
+                    <div class="activity-content">
+                        <i class="fas fa-hiking"></i>
+                        <h3>Hiking</h3>
+                        <p>Trekking through mountains and nature trails</p>
+                    </div>
+                </div>
+
+                <!-- <div class="activity-card">
+                    <div class="activity-image">
+                        <img src="assets/images/personal/rafting.JPG" alt="Rafting">
+                    </div>
+                    <div class="activity-content">
+                        <i class="fas fa-ship"></i>
+                        <h3>Rafting & Canyoneering</h3>
+                        <p>Navigating white water rapids and canyon descents</p>
+                    </div>
+                </div> -->
+
+                <div class="activity-card">
+                    <div class="activity-image">
+                        <img src="assets/images/personal/wildlife.JPG" alt="Wildlife">
+                    </div>
+                    <div class="activity-content">
+                        <i class="fas fa-camera"></i>
+                        <h3>Wildlife Photography</h3>
+                        <p>Capturing nature and wildlife across diverse ecosystems</p>
+                    </div>
+                </div>
+
+                <div class="activity-card">
+                    <div class="activity-image">
+                        <img src="assets/images/personal/Ski.JPG" alt="Skiing">
+                    </div>
+                    <div class="activity-content">
+                        <i class="fas fa-skiing"></i>
+                        <h3>Skiing</h3>
+                        <p>Alpine adventures</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Travel Map Section -->
+            <div class="travel-section">
+                <h3 class="subsection-title"><i class="fas fa-globe-americas"></i> Places I've Explored</h3>
+                <p class="travel-description">I've been fortunate to live and travel across multiple continents, experiencing diverse cultures and landscapes. Each place has shaped my perspective and fueled my curiosity.</p>
+                <div id="travel-map"></div>
+                <div class="travel-stats">
+                    <div class="travel-stat">
+                        <h4>15+</h4>
+                        <p>Countries Visited</p>
+                    </div>
+                    <div class="travel-stat">
+                        <h4>4</h4>
+                        <p>Continents</p>
+                    </div>
+                    <div class="travel-stat">
+                        <h4>6</h4>
+                        <p>Countries Lived In</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Interested in working together or have a question? Feel free to reach out!</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:sami.kaab@outlook.com">sami.kaab@outlook.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+61451767836">+61 451 767 836</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Brisbane, Australia</span>
+                </div>
+            </div>
+            <div class="contact-social">
+                <a href="https://www.linkedin.com/in/sami-kaab/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/SamiKaab" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://orcid.org/0009-0008-0054-0513" target="_blank" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Sami Kaab. All rights reserved.</p>
+            <p>Built with ❤️ for GitHub Pages</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal" onclick="closeProjectModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="modal-close" onclick="closeProjectModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
