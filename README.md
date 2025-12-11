@@ -21,7 +21,7 @@ Github Resume/
 │   │       ├── VR_rehabilitation assessment tool/
 │   │       └── multimodal movement study/
 │   └── documents/       # Downloadable files
-│       └── CV_SamiKaab.pdf
+│       └── CV_Sami-KAAB.pdf
 ├── index.html           # Main HTML file
 ├── links.txt            # Reference links
 └── .gitignore          # Git ignore rules
