@@ -454,6 +454,13 @@ document.addEventListener('DOMContentLoaded', function() {
         maxZoom: 19
     }).addTo(map);
 
+    // Add pin for current location (Bordeaux, France)
+    const bordeauxLatLng = [44.8378, -0.5792];
+    L.marker(bordeauxLatLng, {
+        title: 'Current Location: Bordeaux, France',
+        riseOnHover: false
+    }).addTo(map);
+
     // All countries visited/lived with multiple possible ISO codes
     const countriesVisited = {
         // Countries lived in
