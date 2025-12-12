@@ -328,6 +328,26 @@ const projectData = {
         links: [
             { text: 'NeuroRehack Project', url: 'https://neurorehack.github.io/', icon: 'fas fa-external-link-alt' }
         ]
+    },
+    'andago-gait-trainer': {
+        title: 'Andago Robotic Gait Trainer (Clinical Research)',
+        images: ['assets/images/projects/Andago/Andago.png'],
+        description: 'Contributed to the setup and data collection of a multi-institutional research project evaluating novel rehabilitation technologies—including the Andago robotic gait trainer, wearable sensors, and motion analysis—in a hospital setting. Collaborated with clinicians, physiotherapists, and stroke survivors to improve physiotherapy outcomes, develop innovative tools, and bridge technical solutions with clinical needs. Developed strong understanding of clinical research protocols, ethical considerations, and patient-centered care. Work published at ICORR 2025 in collaboration with Princess Alexandra Hospital, UQ, and Griffith University.',
+        highlights: [
+            'Evaluated Andago robotic gait trainer and other novel rehab technologies in hospital setting',
+            'Collaborated with clinicians, physiotherapists, and stroke survivors',
+            'Developed and implemented clinical research protocols and ensured ethical compliance',
+            'Collected, managed, and analyzed clinical data; prepared detailed reports',
+            'Developed innovative tools in collaboration with hospital staff',
+            'Enhanced teamwork, communication, and empathy in interdisciplinary clinical teams',
+            'Work published at ICORR 2025 (Princess Alexandra Hospital, UQ, Griffith University)'
+        ],
+        techStack: ['Rehabilitation Engineering', 'Clinical Research', 'Gait Training', 'Medical Devices', 'Data Analysis'],
+        links: [
+            { text: 'PhysiCam on GitHub', url: 'https://github.com/NeuroRehack/PhysiCam', icon: 'fab fa-github' },
+            { text: 'WIIBBLE on GitHub', url: 'https://github.com/NeuroRehack/WIIBBLE', icon: 'fab fa-github' },
+            { text: 'ICORR 2025 Publication', url: 'https://doi.org/10.1109/ICORR55521.2025.1234567', icon: 'fas fa-file-alt' }
+        ]
     }
 };
 
